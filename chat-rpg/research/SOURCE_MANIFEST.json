@@ -1,0 +1,1175 @@
+{
+  "repository": "zeroice-ice/rathena",
+  "snapshot_commit": "8338edfa85b3794e5f024d5f3daed6064012dc0f",
+  "review_date_bangkok": "2026-11-01",
+  "method": "Static source tracing of definitions, loaders, call paths and early Renewal content; no game server was compiled or run.",
+  "scope": "Repository inventory plus detailed review of core mechanics and human Novice onboarding. Retrieval does not imply line-by-line review of every downloaded file.",
+  "tree_entries": 5199,
+  "tracked_files": 4961,
+  "tree_truncated": false,
+  "retrieved_files": 98,
+  "raw_entry_counts": {
+    "mobs": 2675,
+    "items": [
+      {
+        "kind": "usable",
+        "count": 6415
+      },
+      {
+        "kind": "equip",
+        "count": 12982
+      },
+      {
+        "kind": "etc",
+        "count": 9959
+      }
+    ],
+    "skills": 1635
+  },
+  "source_references": {
+    "S01": {
+      "path": "README.md",
+      "line": 3,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/README.md#L3"
+    },
+    "S02": {
+      "path": "src/config/renewal.hpp",
+      "line": 24,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/config/renewal.hpp#L24"
+    },
+    "S03": {
+      "path": "src/common/database.cpp",
+      "line": 176,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/common/database.cpp#L176"
+    },
+    "S04": {
+      "path": "db/job_stats.yml",
+      "line": 87,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/job_stats.yml#L87"
+    },
+    "S05": {
+      "path": "npc/re/scripts_jobs.conf",
+      "line": 36,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/scripts_jobs.conf#L36"
+    },
+    "S06": {
+      "path": "npc/re/scripts_monsters.conf",
+      "line": 5,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/scripts_monsters.conf#L5"
+    },
+    "S07": {
+      "path": "conf/char_athena.conf",
+      "line": 115,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/char_athena.conf#L115"
+    },
+    "S08": {
+      "path": "src/char/char_clif.cpp",
+      "line": 1250,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/char/char_clif.cpp#L1250"
+    },
+    "S09": {
+      "path": "src/char/char.cpp",
+      "line": 1394,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/char/char.cpp#L1394"
+    },
+    "S10": {
+      "path": "src/char/char.cpp",
+      "line": 2811,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/char/char.cpp#L2811"
+    },
+    "S11": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 20,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L20"
+    },
+    "S12": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 131,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L131"
+    },
+    "S13": {
+      "path": "db/re/quest_db.yml",
+      "line": 12538,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L12538"
+    },
+    "S14": {
+      "path": "db/re/mob_db.yml",
+      "line": 57447,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L57447"
+    },
+    "S15": {
+      "path": "npc/re/mobs/int_land.txt",
+      "line": 11,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/mobs/int_land.txt#L11"
+    },
+    "S16": {
+      "path": "npc/re/warps/cities/izlude.txt",
+      "line": 69,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/warps/cities/izlude.txt#L69"
+    },
+    "S17": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 334,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L334"
+    },
+    "S18": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 469,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L469"
+    },
+    "S19": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 2632,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L2632"
+    },
+    "S20": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 2061,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L2061"
+    },
+    "S21": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 2412,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L2412"
+    },
+    "S22": {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "line": 4489,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/novice/academy.txt#L4489"
+    },
+    "S23": {
+      "path": "db/re/quest_db.yml",
+      "line": 7720,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L7720"
+    },
+    "S24": {
+      "path": "db/re/job_exp.yml",
+      "line": 150,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/job_exp.yml#L150"
+    },
+    "S25": {
+      "path": "db/re/job_exp.yml",
+      "line": 2027,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/job_exp.yml#L2027"
+    },
+    "S26": {
+      "path": "db/re/job_stats.yml",
+      "line": 89,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/job_stats.yml#L89"
+    },
+    "S27": {
+      "path": "db/re/job_basepoints.yml",
+      "line": 89,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/job_basepoints.yml#L89"
+    },
+    "S28": {
+      "path": "db/re/job_basepoints.yml",
+      "line": 9349,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/job_basepoints.yml#L9349"
+    },
+    "S29": {
+      "path": "db/re/statpoint.yml",
+      "line": 34,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/statpoint.yml#L34"
+    },
+    "S30": {
+      "path": "src/map/pc.cpp",
+      "line": 8244,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L8244"
+    },
+    "S31": {
+      "path": "src/map/pc.cpp",
+      "line": 8800,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L8800"
+    },
+    "S32": {
+      "path": "db/re/skill_tree.yml",
+      "line": 44,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/skill_tree.yml#L44"
+    },
+    "S33": {
+      "path": "db/re/skill_db.yml",
+      "line": 5144,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/skill_db.yml#L5144"
+    },
+    "S34": {
+      "path": "src/map/skills/novice/firstaid.cpp",
+      "line": 12,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/skills/novice/firstaid.cpp#L12"
+    },
+    "S35": {
+      "path": "db/re/status.yml",
+      "line": 630,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/status.yml#L630"
+    },
+    "S36": {
+      "path": "src/map/status.cpp",
+      "line": 2424,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/status.cpp#L2424"
+    },
+    "S37": {
+      "path": "src/map/status.cpp",
+      "line": 2600,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/status.cpp#L2600"
+    },
+    "S38": {
+      "path": "src/map/battle.cpp",
+      "line": 3260,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/battle.cpp#L3260"
+    },
+    "S39": {
+      "path": "src/map/battle.cpp",
+      "line": 4856,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/battle.cpp#L4856"
+    },
+    "S40": {
+      "path": "src/map/battle.cpp",
+      "line": 3889,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/battle.cpp#L3889"
+    },
+    "S41": {
+      "path": "db/size_fix.yml",
+      "line": 37,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/size_fix.yml#L37"
+    },
+    "S42": {
+      "path": "db/re/attr_fix.yml",
+      "line": 35,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/attr_fix.yml#L35"
+    },
+    "S43": {
+      "path": "src/map/unit.cpp",
+      "line": 2902,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/unit.cpp#L2902"
+    },
+    "S44": {
+      "path": "conf/battle/skill.conf",
+      "line": 54,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/battle/skill.conf#L54"
+    },
+    "S45": {
+      "path": "db/re/mob_db.yml",
+      "line": 136,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L136"
+    },
+    "S46": {
+      "path": "npc/re/mobs/fields/prontera.txt",
+      "line": 92,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/mobs/fields/prontera.txt#L92"
+    },
+    "S47": {
+      "path": "src/map/mob.cpp",
+      "line": 2818,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/mob.cpp#L2818"
+    },
+    "S48": {
+      "path": "conf/battle/drops.conf",
+      "line": 11,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/battle/drops.conf#L11"
+    },
+    "S49": {
+      "path": "db/re/level_penalty.yml",
+      "line": 36,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/level_penalty.yml#L36"
+    },
+    "S50": {
+      "path": "src/map/pc.cpp",
+      "line": 13325,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L13325"
+    },
+    "S51": {
+      "path": "db/re/item_db_equip.yml",
+      "line": 2582,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_equip.yml#L2582"
+    },
+    "S52": {
+      "path": "db/re/item_db_equip.yml",
+      "line": 26690,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_equip.yml#L26690"
+    },
+    "S53": {
+      "path": "db/re/item_db_usable.yml",
+      "line": 63779,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L63779"
+    },
+    "S54": {
+      "path": "db/re/item_db_usable.yml",
+      "line": 99,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L99"
+    },
+    "S55": {
+      "path": "db/re/item_db_usable.yml",
+      "line": 737,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L737"
+    },
+    "S56": {
+      "path": "src/map/pc.cpp",
+      "line": 10695,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L10695"
+    },
+    "S57": {
+      "path": "src/map/itemdb.cpp",
+      "line": 1184,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/itemdb.cpp#L1184"
+    },
+    "S58": {
+      "path": "db/re/item_db_etc.yml",
+      "line": 678,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_etc.yml#L678"
+    },
+    "S59": {
+      "path": "src/map/pc.cpp",
+      "line": 3026,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L3026"
+    },
+    "S60": {
+      "path": "conf/battle/items.conf",
+      "line": 68,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/battle/items.conf#L68"
+    },
+    "S61": {
+      "path": "src/map/pc.cpp",
+      "line": 9999,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L9999"
+    },
+    "S62": {
+      "path": "src/map/status.cpp",
+      "line": 4381,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/status.cpp#L4381"
+    },
+    "S63": {
+      "path": "src/map/pc.cpp",
+      "line": 1139,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L1139"
+    },
+    "S64": {
+      "path": "src/map/status.cpp",
+      "line": 5264,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/status.cpp#L5264"
+    },
+    "S65": {
+      "path": "conf/battle/player.conf",
+      "line": 57,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/battle/player.conf#L57"
+    },
+    "S66": {
+      "path": "src/map/quest.cpp",
+      "line": 757,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/quest.cpp#L757"
+    },
+    "S67": {
+      "path": "sql-files/main.sql",
+      "line": 209,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/sql-files/main.sql#L209"
+    },
+    "S68": {
+      "path": "sql-files/main.sql",
+      "line": 1030,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/sql-files/main.sql#L1030"
+    },
+    "S69": {
+      "path": "conf/map_athena.conf",
+      "line": 91,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/map_athena.conf#L91"
+    },
+    "S70": {
+      "path": "doc/script_commands.txt",
+      "line": 488,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/doc/script_commands.txt#L488"
+    },
+    "S71": {
+      "path": "db/re/refine.yml",
+      "line": 49,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/refine.yml#L49"
+    },
+    "S72": {
+      "path": "npc/re/jobs/1-1/swordman.txt",
+      "line": 96,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/re/jobs/1-1/swordman.txt#L96"
+    },
+    "S73": {
+      "path": "npc/other/Global_Functions.txt",
+      "line": 626,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/npc/other/Global_Functions.txt#L626"
+    },
+    "S74": {
+      "path": "src/map/skills/swordman/bash.cpp",
+      "line": 12,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/skills/swordman/bash.cpp#L12"
+    },
+    "S75": {
+      "path": "src/common/random.hpp",
+      "line": 14,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/common/random.hpp#L14"
+    },
+    "S76": {
+      "path": "db/item_db.yml",
+      "line": 91,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/item_db.yml#L91"
+    },
+    "S77": {
+      "path": "src/map/map.cpp",
+      "line": 4258,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/map.cpp#L4258"
+    },
+    "S78": {
+      "path": "db/re/item_db.yml",
+      "line": 91,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db.yml#L91"
+    },
+    "S79": {
+      "path": "conf/battle_athena.conf",
+      "line": 64,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/battle_athena.conf#L64"
+    },
+    "S80": {
+      "path": "conf/battle/exp.conf",
+      "line": 80,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/conf/battle/exp.conf#L80"
+    },
+    "S81": {
+      "path": "src/map/mob.cpp",
+      "line": 4934,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/mob.cpp#L4934"
+    },
+    "S82": {
+      "path": "src/map/pc.cpp",
+      "line": 8317,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L8317"
+    },
+    "S83": {
+      "path": "src/map/clif.cpp",
+      "line": 11741,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/clif.cpp#L11741"
+    },
+    "S84": {
+      "path": "db/re/job_aspd.yml",
+      "line": 89,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/job_aspd.yml#L89"
+    },
+    "S85": {
+      "path": "db/re/mob_db.yml",
+      "line": 57388,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L57388"
+    },
+    "S86": {
+      "path": "src/map/status.cpp",
+      "line": 120,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/status.cpp#L120"
+    },
+    "S87": {
+      "path": "src/map/pc.cpp",
+      "line": 5991,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L5991"
+    },
+    "S88": {
+      "path": "src/map/pc.cpp",
+      "line": 12015,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L12015"
+    },
+    "S89": {
+      "path": "src/map/pc.cpp",
+      "line": 6450,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/src/map/pc.cpp#L6450"
+    }
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "blob_sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "git_bytes": 35147,
+      "retrieved_characters": 35147
+    },
+    {
+      "path": "README.md",
+      "blob_sha": "9b286000ac6166b66c3e51adb03eb05dea2ce6f1",
+      "git_bytes": 4468,
+      "retrieved_characters": 4468
+    },
+    {
+      "path": "chat-rpg/DESIGN.th.md",
+      "blob_sha": "bb3b1984cf0174954ebc628c2e0be759d3d36def",
+      "git_bytes": 4479,
+      "retrieved_characters": 1803
+    },
+    {
+      "path": "conf/battle/battle.conf",
+      "blob_sha": "d6b7a3c4c5161dd7ad3636e9de857c2690072ad0",
+      "git_bytes": 9272,
+      "retrieved_characters": 9268
+    },
+    {
+      "path": "conf/battle/drops.conf",
+      "blob_sha": "e86605b5ac990156bde74b61873d08324e3f66a2",
+      "git_bytes": 9950,
+      "retrieved_characters": 9950
+    },
+    {
+      "path": "conf/battle/exp.conf",
+      "blob_sha": "90a33dec945ab569d7c24c840aece6583743ee3a",
+      "git_bytes": 4707,
+      "retrieved_characters": 4707
+    },
+    {
+      "path": "conf/battle/feature.conf",
+      "blob_sha": "9fd088e13c75808a2818666014b81753dffb9306",
+      "git_bytes": 6128,
+      "retrieved_characters": 6128
+    },
+    {
+      "path": "conf/battle/items.conf",
+      "blob_sha": "9e046e2f562da00c094067f6ab5d49eb4fcf2257",
+      "git_bytes": 6425,
+      "retrieved_characters": 6425
+    },
+    {
+      "path": "conf/battle/monster.conf",
+      "blob_sha": "f1602659726b96c8218ae500f7ce41d5e86ebd28",
+      "git_bytes": 16299,
+      "retrieved_characters": 16299
+    },
+    {
+      "path": "conf/battle/party.conf",
+      "blob_sha": "90c53fff58e6be40d4eb7247686bcb149f47ca6d",
+      "git_bytes": 2936,
+      "retrieved_characters": 2936
+    },
+    {
+      "path": "conf/battle/player.conf",
+      "blob_sha": "bf6bd671a190e2f34e389822abec32ecf2eaa892",
+      "git_bytes": 12478,
+      "retrieved_characters": 12478
+    },
+    {
+      "path": "conf/battle/skill.conf",
+      "blob_sha": "d3af50d44ac6fae07508b9913105acb28466bb55",
+      "git_bytes": 21666,
+      "retrieved_characters": 21666
+    },
+    {
+      "path": "conf/battle/status.conf",
+      "blob_sha": "c36da89edf33dca73675805db88067e01d1e0558",
+      "git_bytes": 1432,
+      "retrieved_characters": 1432
+    },
+    {
+      "path": "conf/battle_athena.conf",
+      "blob_sha": "d9c1aeff71ac1ee81ca474bc44b4b9791bd25e4d",
+      "git_bytes": 1648,
+      "retrieved_characters": 1648
+    },
+    {
+      "path": "conf/char_athena.conf",
+      "blob_sha": "726dd307799457494f5ae34d13f16a16fa70898d",
+      "git_bytes": 10585,
+      "retrieved_characters": 10585
+    },
+    {
+      "path": "conf/map_athena.conf",
+      "blob_sha": "092e9a7d2dc9bd7db595a9bb12eff51e5cd85932",
+      "git_bytes": 4537,
+      "retrieved_characters": 4537
+    },
+    {
+      "path": "conf/readme.md",
+      "blob_sha": "3bfa45acd6c81bd982f933e5e5cab8939c2b968b",
+      "git_bytes": 3123,
+      "retrieved_characters": 3123
+    },
+    {
+      "path": "db/import-tmpl/item_db.yml",
+      "blob_sha": "116be0e3422c24d6b02e0a7d5fdbfbec76fef2ed",
+      "git_bytes": 16837,
+      "retrieved_characters": 16837
+    },
+    {
+      "path": "db/item_db.yml",
+      "blob_sha": "4b326a4a7cce764c7abde0b187a58212fb68785e",
+      "git_bytes": 6120,
+      "retrieved_characters": 6120
+    },
+    {
+      "path": "db/job_stats.yml",
+      "blob_sha": "11ec669630ad7f27051f5fe80498034645b6a628",
+      "git_bytes": 5559,
+      "retrieved_characters": 5559
+    },
+    {
+      "path": "db/map_drops.yml",
+      "blob_sha": "28d76aaf8c4461b416a9fb17adc9a0adb5377a70",
+      "git_bytes": 2386,
+      "retrieved_characters": 2386
+    },
+    {
+      "path": "db/mob_db.yml",
+      "blob_sha": "df774518fa0335a443826bb489ff471ade7e5ba4",
+      "git_bytes": 5219,
+      "retrieved_characters": 5219
+    },
+    {
+      "path": "db/mob_item_ratio.yml",
+      "blob_sha": "b5a0a0810ddde4c8ea9f066a78f1659760520ca5",
+      "git_bytes": 1466,
+      "retrieved_characters": 1466
+    },
+    {
+      "path": "db/re/attr_fix.yml",
+      "blob_sha": "cc0cdd4642f210a66e81e89c97dae838a1f08424",
+      "git_bytes": 8604,
+      "retrieved_characters": 8604
+    },
+    {
+      "path": "db/re/item_db.yml",
+      "blob_sha": "82c94786f3b53998d0ad04dc681b176ef1a32e2e",
+      "git_bytes": 6090,
+      "retrieved_characters": 6090
+    },
+    {
+      "path": "db/re/item_db_equip.yml",
+      "blob_sha": "5fbcb89ba47923d09d58b6f39a0d46525bdb47d2",
+      "git_bytes": 6155771,
+      "retrieved_characters": 6155762
+    },
+    {
+      "path": "db/re/item_db_etc.yml",
+      "blob_sha": "035c7c13c92f55d5f7816c4b91751fd337264fde",
+      "git_bytes": 2343926,
+      "retrieved_characters": 2343921
+    },
+    {
+      "path": "db/re/item_db_usable.yml",
+      "blob_sha": "ed061da0ace188dd02dd16a0d01106d9388291d3",
+      "git_bytes": 1874935,
+      "retrieved_characters": 1874921
+    },
+    {
+      "path": "db/re/job_aspd.yml",
+      "blob_sha": "ebba86d602d844d06e674a63fc4d5de77c4a0f72",
+      "git_bytes": 14384,
+      "retrieved_characters": 14384
+    },
+    {
+      "path": "db/re/job_basepoints.yml",
+      "blob_sha": "81d71f5f5e630c0d868e8cad11b73e03880fda1e",
+      "git_bytes": 344750,
+      "retrieved_characters": 344750
+    },
+    {
+      "path": "db/re/job_exp.yml",
+      "blob_sha": "cbf34d618afb082cfa046256b48fc9db8f5505be",
+      "git_bytes": 77685,
+      "retrieved_characters": 77685
+    },
+    {
+      "path": "db/re/job_stats.yml",
+      "blob_sha": "33886e6fa0a2de85bfb167985d1b88ccebabcac2",
+      "git_bytes": 132324,
+      "retrieved_characters": 132324
+    },
+    {
+      "path": "db/re/level_penalty.yml",
+      "blob_sha": "3e7eec9992403e870a245cfbce898f06faf416e7",
+      "git_bytes": 2744,
+      "retrieved_characters": 2744
+    },
+    {
+      "path": "db/re/map_drops.yml",
+      "blob_sha": "a06e4d8161668d766947574dcd7f50dbde40880d",
+      "git_bytes": 68741,
+      "retrieved_characters": 68741
+    },
+    {
+      "path": "db/re/mob_db.yml",
+      "blob_sha": "22f407219321b98d6632ad00264a54f50a4dfaa4",
+      "git_bytes": 2298062,
+      "retrieved_characters": 2298060
+    },
+    {
+      "path": "db/re/mob_skill_db.txt",
+      "blob_sha": "e978427d5cd0b8e934f904fe5555fd82e89ccbd4",
+      "git_bytes": 1279512,
+      "retrieved_characters": 1279512
+    },
+    {
+      "path": "db/re/quest_db.yml",
+      "blob_sha": "4f387ce709b094718514844ffa39a74181e538a3",
+      "git_bytes": 308584,
+      "retrieved_characters": 308584
+    },
+    {
+      "path": "db/re/refine.yml",
+      "blob_sha": "43ab47b4faf7d0b96097a6f5f98b54cfae02126f",
+      "git_bytes": 80279,
+      "retrieved_characters": 80279
+    },
+    {
+      "path": "db/re/size_fix.yml",
+      "blob_sha": "b7a823ada13235373a06fa33e561c624ae99a79f",
+      "git_bytes": 1410,
+      "retrieved_characters": 1410
+    },
+    {
+      "path": "db/re/skill_db.yml",
+      "blob_sha": "288260c706ac6783c39c0a6b492ec00933a1030e",
+      "git_bytes": 972940,
+      "retrieved_characters": 972940
+    },
+    {
+      "path": "db/re/skill_tree.yml",
+      "blob_sha": "81ee1f5fe383fb9e3bb880952f3610c9325b707f",
+      "git_bytes": 209705,
+      "retrieved_characters": 209705
+    },
+    {
+      "path": "db/re/statpoint.yml",
+      "blob_sha": "af0a2056b23068db86191c1b1d3aaf02e6c6117f",
+      "git_bytes": 11505,
+      "retrieved_characters": 11505
+    },
+    {
+      "path": "db/re/status.yml",
+      "blob_sha": "b2a93c90041c1d58f0cde8dda4b91d1f5ae37689",
+      "git_bytes": 237768,
+      "retrieved_characters": 237768
+    },
+    {
+      "path": "db/readme.md",
+      "blob_sha": "f4f3e84d5d26de0909a7a2e19120115f42ee455f",
+      "git_bytes": 3388,
+      "retrieved_characters": 3388
+    },
+    {
+      "path": "db/size_fix.yml",
+      "blob_sha": "7590757356268f206dd5548984e3ccc550fe5c75",
+      "git_bytes": 2236,
+      "retrieved_characters": 2236
+    },
+    {
+      "path": "db/skill_db.yml",
+      "blob_sha": "a1143de9e6a5c28b333f17c1fd02d616334e0138",
+      "git_bytes": 8961,
+      "retrieved_characters": 8961
+    },
+    {
+      "path": "doc/mapflags.txt",
+      "blob_sha": "ad7232625320c7e3c946f922309806fddba47c15",
+      "git_bytes": 13356,
+      "retrieved_characters": 13356
+    },
+    {
+      "path": "doc/script_commands.txt",
+      "blob_sha": "18bca372d74812bceb07148bebaa55ad1d128faf",
+      "git_bytes": 436348,
+      "retrieved_characters": 436333
+    },
+    {
+      "path": "npc/mapflag/nosave.txt",
+      "blob_sha": "f8f99aca263a6d0a4cf5096df583b0f23ad886fb",
+      "git_bytes": 11385,
+      "retrieved_characters": 11385
+    },
+    {
+      "path": "npc/other/Global_Functions.txt",
+      "blob_sha": "4e4a2c39f302f54e1296b63c9fc9b23fa2290d20",
+      "git_bytes": 27016,
+      "retrieved_characters": 27016
+    },
+    {
+      "path": "npc/re/jobs/1-1/swordman.txt",
+      "blob_sha": "c65bb79521848453390adb6ca8bf9def737012ee",
+      "git_bytes": 4744,
+      "retrieved_characters": 4744
+    },
+    {
+      "path": "npc/re/jobs/novice/academy.txt",
+      "blob_sha": "16947da9563a94d4fe611873997311d176ebe263",
+      "git_bytes": 508418,
+      "retrieved_characters": 508376
+    },
+    {
+      "path": "npc/re/jobs/novice/novice.txt",
+      "blob_sha": "d77827c9c5ab63d3cdff0e32beb6995f4f0e190f",
+      "git_bytes": 116020,
+      "retrieved_characters": 116020
+    },
+    {
+      "path": "npc/re/mapflag/nopenalty.txt",
+      "blob_sha": "48970dbf1b22a52d2d820cd42430c4c7f120da2a",
+      "git_bytes": 3536,
+      "retrieved_characters": 3536
+    },
+    {
+      "path": "npc/re/mapflag/norenewalpenalty.txt",
+      "blob_sha": "0b94e230ef98bc5cb29d8a603c033d29623c8794",
+      "git_bytes": 2635,
+      "retrieved_characters": 2635
+    },
+    {
+      "path": "npc/re/mapflag/nosave.txt",
+      "blob_sha": "57d3adda06450719f1087dc0a262157481a44171",
+      "git_bytes": 3905,
+      "retrieved_characters": 3905
+    },
+    {
+      "path": "npc/re/mobs/academy.txt",
+      "blob_sha": "43bf1bb727bb29e8dac5dbffb63c9b4cfdffe4b4",
+      "git_bytes": 4975,
+      "retrieved_characters": 4975
+    },
+    {
+      "path": "npc/re/mobs/fields/prontera.txt",
+      "blob_sha": "51744d8f0d407b9416f6c1ebe0bd17ade018493c",
+      "git_bytes": 6648,
+      "retrieved_characters": 6648
+    },
+    {
+      "path": "npc/re/mobs/int_land.txt",
+      "blob_sha": "d06580193ef8effe67ac91d7883fb39cb40c69f6",
+      "git_bytes": 656,
+      "retrieved_characters": 656
+    },
+    {
+      "path": "npc/re/quests/eden/eden_tutorial.txt",
+      "blob_sha": "070bca64b68a3f4ebc432bbb8f1c1c93d2ed64ca",
+      "git_bytes": 66309,
+      "retrieved_characters": 66309
+    },
+    {
+      "path": "npc/re/scripts_jobs.conf",
+      "blob_sha": "9afc1148c788d6383bdcd29497d1a89038c61f03",
+      "git_bytes": 1502,
+      "retrieved_characters": 1502
+    },
+    {
+      "path": "npc/re/scripts_main.conf",
+      "blob_sha": "8ee4d701477b5676135fb12fe24e6da7f2f3a542",
+      "git_bytes": 1922,
+      "retrieved_characters": 1922
+    },
+    {
+      "path": "npc/re/scripts_mapflags.conf",
+      "blob_sha": "cc5769c1bb9c3a24186a45f3a855dfda819b6a6f",
+      "git_bytes": 944,
+      "retrieved_characters": 944
+    },
+    {
+      "path": "npc/re/scripts_monsters.conf",
+      "blob_sha": "9c063f52f1ec31781e506fa47ab4848edfc298df",
+      "git_bytes": 4089,
+      "retrieved_characters": 4089
+    },
+    {
+      "path": "npc/re/scripts_warps.conf",
+      "blob_sha": "add7142e7e072cf2a1078f2e7a8b931e2ac5eea5",
+      "git_bytes": 2668,
+      "retrieved_characters": 2668
+    },
+    {
+      "path": "npc/re/warps/cities/izlude.txt",
+      "blob_sha": "19647254600370a0434f605153ecf8757bee7e6f",
+      "git_bytes": 15437,
+      "retrieved_characters": 15437
+    },
+    {
+      "path": "npc/scripts_athena.conf",
+      "blob_sha": "6f45653de3805ea02d0c3e72439f9c3291a0d92a",
+      "git_bytes": 10376,
+      "retrieved_characters": 10376
+    },
+    {
+      "path": "npc/scripts_jobs.conf",
+      "blob_sha": "0ed79fadbc0a5a685190d08d1e852ad9d80bc184",
+      "git_bytes": 2360,
+      "retrieved_characters": 2360
+    },
+    {
+      "path": "sql-files/main.sql",
+      "blob_sha": "a838dfe39232b26fa58097f165ef45cd2aedb076",
+      "git_bytes": 41941,
+      "retrieved_characters": 41941
+    },
+    {
+      "path": "src/char/char.cpp",
+      "blob_sha": "493819122c83103e4ad5d6fb2f166d11013ee4aa",
+      "git_bytes": 136590,
+      "retrieved_characters": 136590
+    },
+    {
+      "path": "src/char/char.hpp",
+      "blob_sha": "6230e7879909aa2ae9e4b6ed39726e887e115925",
+      "git_bytes": 11951,
+      "retrieved_characters": 11951
+    },
+    {
+      "path": "src/char/char_clif.cpp",
+      "blob_sha": "31960326610a1b739e9ab9f040d4e51f9eb1cab4",
+      "git_bytes": 50916,
+      "retrieved_characters": 50916
+    },
+    {
+      "path": "src/char/int_quest.cpp",
+      "blob_sha": "08190962cc7d45047c8718579af6103f60fa3fc8",
+      "git_bytes": 6394,
+      "retrieved_characters": 6394
+    },
+    {
+      "path": "src/char/int_storage.cpp",
+      "blob_sha": "44706012326b48ad5ec95005a31ce9969d56ea3e",
+      "git_bytes": 16021,
+      "retrieved_characters": 16021
+    },
+    {
+      "path": "src/common/database.cpp",
+      "blob_sha": "612ca634503f556d26ec33270d6eb5b3fe6cc285",
+      "git_bytes": 10968,
+      "retrieved_characters": 10968
+    },
+    {
+      "path": "src/common/random.cpp",
+      "blob_sha": "663af94bb7a89d6bc3f5068fdb5026b3b053ac8c",
+      "git_bytes": 376,
+      "retrieved_characters": 376
+    },
+    {
+      "path": "src/common/random.hpp",
+      "blob_sha": "6653b9d186793499beded91484d64ac0ae30f36d",
+      "git_bytes": 1729,
+      "retrieved_characters": 1729
+    },
+    {
+      "path": "src/config/packets.hpp",
+      "blob_sha": "b216feb6e9668ed1cda8aa2813ed9048fbbb0c3c",
+      "git_bytes": 2956,
+      "retrieved_characters": 2956
+    },
+    {
+      "path": "src/config/renewal.hpp",
+      "blob_sha": "bb47ca2b52bf957b865c83f4c389976eb5266985",
+      "git_bytes": 2683,
+      "retrieved_characters": 2683
+    },
+    {
+      "path": "src/map/battle.cpp",
+      "blob_sha": "5420fbde0ee261a020b79cf04cfd0bdda7d53435",
+      "git_bytes": 377226,
+      "retrieved_characters": 377226
+    },
+    {
+      "path": "src/map/clif.cpp",
+      "blob_sha": "83060544d6912bb8f6f03a7fd65d8aa6880257d2",
+      "git_bytes": 775974,
+      "retrieved_characters": 775974
+    },
+    {
+      "path": "src/map/itemdb.cpp",
+      "blob_sha": "d6c3a86d8b63ba28ce08c7a67e2819d7c5c5a597",
+      "git_bytes": 136601,
+      "retrieved_characters": 136601
+    },
+    {
+      "path": "src/map/map.cpp",
+      "blob_sha": "37f58a6e422dcfecdf9c3faafc1e18875d622356",
+      "git_bytes": 158710,
+      "retrieved_characters": 158710
+    },
+    {
+      "path": "src/map/mob.cpp",
+      "blob_sha": "c538909619374f735e90c2aba438e31c708d8599",
+      "git_bytes": 223458,
+      "retrieved_characters": 223458
+    },
+    {
+      "path": "src/map/npc.cpp",
+      "blob_sha": "2e83d777bdc2ec10d6bfe78287dd2c7f80e34351",
+      "git_bytes": 194209,
+      "retrieved_characters": 194209
+    },
+    {
+      "path": "src/map/party.cpp",
+      "blob_sha": "1c98dc333107f65c313beed8423caed2fb7cf9d9",
+      "git_bytes": 42180,
+      "retrieved_characters": 42180
+    },
+    {
+      "path": "src/map/path.cpp",
+      "blob_sha": "69732154335e1792ea9acc915ccb1f8d046b752e",
+      "git_bytes": 15523,
+      "retrieved_characters": 15523
+    },
+    {
+      "path": "src/map/pc.cpp",
+      "blob_sha": "eceefa9fc162814fec102d3e988658fdc7e82464",
+      "git_bytes": 498055,
+      "retrieved_characters": 498055
+    },
+    {
+      "path": "src/map/pc.hpp",
+      "blob_sha": "4cb5e9386fadfbbdeb40198e82fc8b9686105d7b",
+      "git_bytes": 63846,
+      "retrieved_characters": 63846
+    },
+    {
+      "path": "src/map/quest.cpp",
+      "blob_sha": "89892ed486259dff4d0bb6870fb6b6e7a9997c48",
+      "git_bytes": 27025,
+      "retrieved_characters": 27025
+    },
+    {
+      "path": "src/map/skill.cpp",
+      "blob_sha": "27c9e23729891169cd29fd0a68615f168a1623a0",
+      "git_bytes": 520916,
+      "retrieved_characters": 520916
+    },
+    {
+      "path": "src/map/skills/novice/firstaid.cpp",
+      "blob_sha": "4f5f4f228f7c9705b618e6010a5df67f82a5fe7e",
+      "git_bytes": 466,
+      "retrieved_characters": 466
+    },
+    {
+      "path": "src/map/skills/novice/skill_factory_novice.cpp",
+      "blob_sha": "f08d2fa71aa708ae044a94f928b7b469591af7ae",
+      "git_bytes": 2127,
+      "retrieved_characters": 2127
+    },
+    {
+      "path": "src/map/skills/skill_impl.cpp",
+      "blob_sha": "d6cc6222ce804ca24e073dfcdd3ee9cd97a3a414",
+      "git_bytes": 5724,
+      "retrieved_characters": 5724
+    },
+    {
+      "path": "src/map/skills/swordman/bash.cpp",
+      "blob_sha": "3ef97c613ccb0f4d6ae904e9a82aa70bf4929ebc",
+      "git_bytes": 1308,
+      "retrieved_characters": 1308
+    },
+    {
+      "path": "src/map/status.cpp",
+      "blob_sha": "87e0d4196c4f565311d9ca153390447df1c820c9",
+      "git_bytes": 507489,
+      "retrieved_characters": 507489
+    },
+    {
+      "path": "src/map/storage.cpp",
+      "blob_sha": "6f02feb75fdb33f8b5e68187db3d26922599ef44",
+      "git_bytes": 32867,
+      "retrieved_characters": 32867
+    },
+    {
+      "path": "src/map/unit.cpp",
+      "blob_sha": "1d0b84b0924ab5401de023edcdf4be4220a52832",
+      "git_bytes": 123023,
+      "retrieved_characters": 123023
+    }
+  ],
+  "validation": {
+    "static_checks_passed": 103,
+    "checks": [
+      "reference S01 resolves to source line",
+      "reference S02 resolves to source line",
+      "reference S03 resolves to source line",
+      "reference S76 resolves to source line",
+      "reference S78 resolves to source line",
+      "reference S04 resolves to source line",
+      "reference S79 resolves to source line",
+      "reference S77 resolves to source line",
+      "reference S07 resolves to source line",
+      "reference S08 resolves to source line",
+      "reference S09 resolves to source line",
+      "reference S10 resolves to source line",
+      "reference S67 resolves to source line",
+      "reference S53 resolves to source line",
+      "reference S86 resolves to source line",
+      "reference S05 resolves to source line",
+      "reference S06 resolves to source line",
+      "reference S11 resolves to source line",
+      "reference S12 resolves to source line",
+      "reference S15 resolves to source line",
+      "reference S14 resolves to source line",
+      "reference S81 resolves to source line",
+      "reference S13 resolves to source line",
+      "reference S66 resolves to source line",
+      "reference S17 resolves to source line",
+      "reference S16 resolves to source line",
+      "reference S18 resolves to source line",
+      "reference S19 resolves to source line",
+      "reference S20 resolves to source line",
+      "reference S21 resolves to source line",
+      "reference S22 resolves to source line",
+      "reference S23 resolves to source line",
+      "reference S24 resolves to source line",
+      "reference S25 resolves to source line",
+      "reference S30 resolves to source line",
+      "reference S82 resolves to source line",
+      "reference S36 resolves to source line",
+      "reference S37 resolves to source line",
+      "reference S56 resolves to source line",
+      "reference S31 resolves to source line",
+      "reference S29 resolves to source line",
+      "reference S26 resolves to source line",
+      "reference S27 resolves to source line",
+      "reference S28 resolves to source line",
+      "reference S32 resolves to source line",
+      "reference S83 resolves to source line",
+      "reference S73 resolves to source line",
+      "reference S33 resolves to source line",
+      "reference S34 resolves to source line",
+      "reference S35 resolves to source line",
+      "reference S64 resolves to source line",
+      "reference S74 resolves to source line",
+      "reference S38 resolves to source line",
+      "reference S40 resolves to source line",
+      "reference S39 resolves to source line",
+      "reference S45 resolves to source line",
+      "reference S42 resolves to source line",
+      "reference S41 resolves to source line",
+      "reference S84 resolves to source line",
+      "reference S43 resolves to source line",
+      "reference S44 resolves to source line",
+      "reference S85 resolves to source line",
+      "reference S46 resolves to source line",
+      "reference S49 resolves to source line",
+      "reference S50 resolves to source line",
+      "reference S47 resolves to source line",
+      "reference S48 resolves to source line",
+      "reference S57 resolves to source line",
+      "reference S58 resolves to source line",
+      "reference S51 resolves to source line",
+      "reference S52 resolves to source line",
+      "reference S54 resolves to source line",
+      "reference S55 resolves to source line",
+      "reference S87 resolves to source line",
+      "reference S88 resolves to source line",
+      "reference S60 resolves to source line",
+      "reference S89 resolves to source line",
+      "reference S59 resolves to source line",
+      "reference S65 resolves to source line",
+      "reference S80 resolves to source line",
+      "reference S61 resolves to source line",
+      "reference S62 resolves to source line",
+      "reference S63 resolves to source line",
+      "reference S68 resolves to source line",
+      "reference S70 resolves to source line",
+      "reference S69 resolves to source line",
+      "reference S72 resolves to source line",
+      "reference S71 resolves to source line",
+      "snapshot matches master commit studied",
+      "all reference record sources exist",
+      "Base EXP sample equals source",
+      "Job EXP sample equals source",
+      "Poring drop index 0 equals source",
+      "Poring drop index 1 equals source",
+      "Poring drop index 2 equals source",
+      "Poring drop index 3 equals source",
+      "Poring drop index 4 equals source",
+      "Poring drop index 5 equals source",
+      "Poring drop index 6 equals source",
+      "Poring drop index 7 equals source",
+      "G_PORING omits BaseExp and JobExp",
+      "report retains no-play/no-character scope",
+      "design defers end-game decisions"
+    ],
+    "runtime_validation": "Not performed: server not compiled, started or playtested."
+  }
+}

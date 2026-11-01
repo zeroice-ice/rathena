@@ -1,0 +1,900 @@
+{
+  "format_version": 1,
+  "purpose": "Research reference only. Not a save file, a complete database, or approved chat-game rules.",
+  "repository": "zeroice-ice/rathena",
+  "snapshot_commit": "8338edfa85b3794e5f024d5f3daed6064012dc0f",
+  "mode": "Renewal",
+  "license_and_attribution": "Source: rAthena Development Team; see repository LICENSE and individual file notices. Values and references extracted for study.",
+  "starting_human_novice": {
+    "base_level": 1,
+    "job_level": 1,
+    "base_exp": 0,
+    "job_exp": 0,
+    "base_stats": {
+      "str": 1,
+      "agi": 1,
+      "vit": 1,
+      "int": 1,
+      "dex": 1,
+      "luk": 1
+    },
+    "unspent_status_points_default": 48,
+    "zeny": 0,
+    "spawn_candidates": [
+      {
+        "map": "iz_int",
+        "x": 18,
+        "y": 26
+      },
+      {
+        "map": "iz_int01",
+        "x": 18,
+        "y": 26
+      },
+      {
+        "map": "iz_int02",
+        "x": 18,
+        "y": 26
+      },
+      {
+        "map": "iz_int03",
+        "x": 18,
+        "y": 26
+      },
+      {
+        "map": "iz_int04",
+        "x": 18,
+        "y": 26
+      }
+    ],
+    "starting_items": [
+      {
+        "item_id": 1201,
+        "amount": 1,
+        "equip_position_mask": 2
+      },
+      {
+        "item_id": 2301,
+        "amount": 1,
+        "equip_position_mask": 16
+      },
+      {
+        "item_id": 23484,
+        "amount": 1,
+        "equip_position_mask": 0
+      }
+    ],
+    "conditions": [
+      "Human path under modern/default PACKETVER; not the Doram path.",
+      "Defaults before custom overrides, stat allocation and later status recalculation."
+    ]
+  },
+  "novice_exp_requirements": {
+    "interpretation": "Experience required to advance from the stated current level; not cumulative totals.",
+    "base_first_ten": [
+      {
+        "current_level": 1,
+        "exp": 548
+      },
+      {
+        "current_level": 2,
+        "exp": 894
+      },
+      {
+        "current_level": 3,
+        "exp": 1486
+      },
+      {
+        "current_level": 4,
+        "exp": 2173
+      },
+      {
+        "current_level": 5,
+        "exp": 3152
+      },
+      {
+        "current_level": 6,
+        "exp": 3732
+      },
+      {
+        "current_level": 7,
+        "exp": 4112
+      },
+      {
+        "current_level": 8,
+        "exp": 4441
+      },
+      {
+        "current_level": 9,
+        "exp": 4866
+      },
+      {
+        "current_level": 10,
+        "exp": 5337
+      }
+    ],
+    "job_first_nine": [
+      {
+        "current_level": 1,
+        "exp": 10
+      },
+      {
+        "current_level": 2,
+        "exp": 18
+      },
+      {
+        "current_level": 3,
+        "exp": 28
+      },
+      {
+        "current_level": 4,
+        "exp": 40
+      },
+      {
+        "current_level": 5,
+        "exp": 91
+      },
+      {
+        "current_level": 6,
+        "exp": 151
+      },
+      {
+        "current_level": 7,
+        "exp": 205
+      },
+      {
+        "current_level": 8,
+        "exp": 268
+      },
+      {
+        "current_level": 9,
+        "exp": 340
+      }
+    ],
+    "novice_max_job_level": 10,
+    "notes": [
+      "Rates, bonuses, level-difference modifiers and carry-over rules are applied elsewhere."
+    ]
+  },
+  "mobs": [
+    {
+      "id": 1002,
+      "raw_fields": {
+        "AegisName": "PORING",
+        "Name": "Poring",
+        "Level": 1,
+        "Hp": 55,
+        "BaseExp": 150,
+        "JobExp": 40,
+        "Attack": 1,
+        "Attack2": 1,
+        "Defense": 2,
+        "MagicDefense": 5,
+        "Str": 6,
+        "Int": 0,
+        "Dex": 6,
+        "Luk": 5,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Medium",
+        "Race": "Plant",
+        "Element": "Water",
+        "ElementLevel": 1,
+        "WalkSpeed": 400,
+        "AttackDelay": 1872,
+        "AttackMotion": 672,
+        "ClientAttackMotion": 288,
+        "DamageMotion": 480,
+        "Ai": 2
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 136,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L136"
+      },
+      "notes": [
+        "EXP and attack fields are raw database inputs, not final rewards or damage."
+      ]
+    },
+    {
+      "id": 1007,
+      "raw_fields": {
+        "AegisName": "FABRE",
+        "Name": "Fabre",
+        "Level": 6,
+        "Hp": 59,
+        "BaseExp": 158,
+        "JobExp": 65,
+        "Attack": 1,
+        "Attack2": 3,
+        "Defense": 24,
+        "Str": 12,
+        "Agi": 5,
+        "Vit": 5,
+        "Int": 5,
+        "Dex": 12,
+        "Luk": 5,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Small",
+        "Race": "Insect",
+        "Element": "Earth",
+        "ElementLevel": 1,
+        "WalkSpeed": 400,
+        "AttackDelay": 1672,
+        "AttackMotion": 672,
+        "ClientAttackMotion": 192,
+        "DamageMotion": 480,
+        "Ai": 1
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 323,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L323"
+      },
+      "notes": [
+        "EXP and attack fields are raw database inputs, not final rewards or damage."
+      ]
+    },
+    {
+      "id": 1008,
+      "raw_fields": {
+        "AegisName": "PUPA",
+        "Name": "Pupa",
+        "Level": 4,
+        "Hp": 51,
+        "BaseExp": 157,
+        "JobExp": 55,
+        "Attack": 1,
+        "Attack2": 3,
+        "Defense": 24,
+        "MagicDefense": 2,
+        "Str": 11,
+        "Vit": 3,
+        "Int": 3,
+        "Dex": 8,
+        "Luk": 6,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Small",
+        "Race": "Insect",
+        "Element": "Earth",
+        "ElementLevel": 1,
+        "WalkSpeed": 1000,
+        "AttackDelay": 1001,
+        "AttackMotion": 1,
+        "ClientAttackMotion": 768,
+        "DamageMotion": 1,
+        "Ai": 6
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 374,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L374"
+      },
+      "notes": [
+        "EXP and attack fields are raw database inputs, not final rewards or damage."
+      ]
+    },
+    {
+      "id": 1063,
+      "raw_fields": {
+        "AegisName": "LUNATIC",
+        "Name": "Lunatic",
+        "Level": 3,
+        "Hp": 48,
+        "BaseExp": 150,
+        "JobExp": 50,
+        "Attack": 1,
+        "Attack2": 1,
+        "Defense": 18,
+        "Str": 10,
+        "Agi": 3,
+        "Vit": 3,
+        "Int": 0,
+        "Dex": 8,
+        "Luk": 5,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Small",
+        "Race": "Brute",
+        "Element": "Neutral",
+        "ElementLevel": 3,
+        "WalkSpeed": 200,
+        "AttackDelay": 1456,
+        "AttackMotion": 456,
+        "ClientAttackMotion": 264,
+        "DamageMotion": 336,
+        "Ai": 1
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 3053,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L3053"
+      },
+      "notes": [
+        "EXP and attack fields are raw database inputs, not final rewards or damage."
+      ]
+    },
+    {
+      "id": 1113,
+      "raw_fields": {
+        "AegisName": "DROPS",
+        "Name": "Drops",
+        "Level": 2,
+        "Hp": 46,
+        "BaseExp": 150,
+        "JobExp": 45,
+        "Attack": 1,
+        "Attack2": 1,
+        "Defense": 16,
+        "Str": 8,
+        "Int": 0,
+        "Dex": 6,
+        "Luk": 2,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Medium",
+        "Race": "Plant",
+        "Element": "Fire",
+        "ElementLevel": 1,
+        "WalkSpeed": 400,
+        "AttackDelay": 1372,
+        "AttackMotion": 672,
+        "ClientAttackMotion": 288,
+        "DamageMotion": 480,
+        "Ai": 2
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 5548,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L5548"
+      },
+      "notes": [
+        "EXP and attack fields are raw database inputs, not final rewards or damage."
+      ]
+    },
+    {
+      "id": 2398,
+      "raw_fields": {
+        "AegisName": "LITTLE_PORING",
+        "Name": "Little Poring",
+        "Level": 1,
+        "Hp": 40,
+        "BaseExp": 18,
+        "JobExp": 10,
+        "Attack": 1,
+        "Attack2": 1,
+        "Defense": 2,
+        "MagicDefense": 5,
+        "Str": 6,
+        "Int": 0,
+        "Dex": 6,
+        "Luk": 5,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Small",
+        "Race": "Plant",
+        "Element": "Water",
+        "ElementLevel": 1,
+        "WalkSpeed": 400,
+        "AttackDelay": 1872,
+        "AttackMotion": 672,
+        "ClientAttackMotion": 288,
+        "DamageMotion": 480,
+        "Ai": 2
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 57388,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L57388"
+      },
+      "notes": [
+        "EXP and attack fields are raw database inputs, not final rewards or damage."
+      ]
+    },
+    {
+      "id": 2401,
+      "raw_fields": {
+        "AegisName": "G_PORING",
+        "Name": "Poring",
+        "Level": 1,
+        "Hp": 55,
+        "Attack": 1,
+        "Attack2": 1,
+        "Defense": 2,
+        "MagicDefense": 5,
+        "Str": 6,
+        "Int": 0,
+        "Dex": 6,
+        "Luk": 5,
+        "AttackRange": 1,
+        "SkillRange": 10,
+        "ChaseRange": 12,
+        "Size": "Medium",
+        "Race": "Plant",
+        "Element": "Water",
+        "ElementLevel": 1,
+        "WalkSpeed": 400,
+        "AttackDelay": 1872,
+        "AttackMotion": 672,
+        "ClientAttackMotion": 288,
+        "DamageMotion": 480,
+        "Ai": 2
+      },
+      "source": {
+        "path": "db/re/mob_db.yml",
+        "line": 57447,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L57447"
+      },
+      "notes": [
+        "BaseExp and JobExp are absent; constructor defaults both to 0 for a new entry.",
+        "Wood is supplied by quest 21008 rather than a normal drop list."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 501,
+      "raw_fields": {
+        "AegisName": "Red_Potion",
+        "Name": "Red Potion",
+        "Type": "Healing",
+        "Buy": 10,
+        "Weight": 70
+      },
+      "source": {
+        "path": "db/re/item_db_usable.yml",
+        "line": 99,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L99"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 512,
+      "raw_fields": {
+        "AegisName": "Apple",
+        "Name": "Apple",
+        "Type": "Healing",
+        "Buy": 15,
+        "Weight": 20
+      },
+      "source": {
+        "path": "db/re/item_db_usable.yml",
+        "line": 203,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L203"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 569,
+      "raw_fields": {
+        "AegisName": "Novice_Potion",
+        "Name": "Novice Potion",
+        "Type": "Healing",
+        "Weight": 10
+      },
+      "source": {
+        "path": "db/re/item_db_usable.yml",
+        "line": 737,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L737"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 23484,
+      "raw_fields": {
+        "AegisName": "Firstaid_Box_5",
+        "Name": "First aid Box (5)",
+        "Type": "Usable",
+        "EquipLevelMin": 5
+      },
+      "source": {
+        "path": "db/re/item_db_usable.yml",
+        "line": 63779,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_usable.yml#L63779"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 1201,
+      "raw_fields": {
+        "AegisName": "Knife",
+        "Name": "Knife",
+        "Type": "Weapon",
+        "SubType": "Dagger",
+        "Buy": 50,
+        "Weight": 400,
+        "Attack": 17,
+        "Range": 1,
+        "Slots": 3,
+        "WeaponLevel": 1,
+        "EquipLevelMin": 1,
+        "Refineable": "true"
+      },
+      "source": {
+        "path": "db/re/item_db_equip.yml",
+        "line": 2582,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_equip.yml#L2582"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 2301,
+      "raw_fields": {
+        "AegisName": "Cotton_Shirt",
+        "Name": "Cotton Shirt",
+        "Type": "Armor",
+        "Buy": 10,
+        "Weight": 100,
+        "Defense": 10,
+        "ArmorLevel": 1,
+        "Refineable": "true"
+      },
+      "source": {
+        "path": "db/re/item_db_equip.yml",
+        "line": 26690,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_equip.yml#L26690"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 909,
+      "raw_fields": {
+        "AegisName": "Jellopy",
+        "Name": "Jellopy",
+        "Type": "Etc",
+        "Buy": 6,
+        "Weight": 10
+      },
+      "source": {
+        "path": "db/re/item_db_etc.yml",
+        "line": 678,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_etc.yml#L678"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    },
+    {
+      "id": 6008,
+      "raw_fields": {
+        "AegisName": "Wood",
+        "Name": "Wood",
+        "Type": "Etc",
+        "Weight": 10
+      },
+      "source": {
+        "path": "db/re/item_db_etc.yml",
+        "line": 15582,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/item_db_etc.yml#L15582"
+      },
+      "notes": [
+        "Weight uses tenths of the displayed unit.",
+        "Buy is a base price, not proof of availability at any shop."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "raw_fields": {
+        "Name": "NV_BASIC",
+        "Description": "Basic Skill",
+        "MaxLevel": 9
+      },
+      "source": {
+        "path": "db/re/skill_db.yml",
+        "line": 146,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/skill_db.yml#L146"
+      }
+    },
+    {
+      "id": 142,
+      "raw_fields": {
+        "Name": "NV_FIRSTAID",
+        "Description": "First Aid",
+        "MaxLevel": 1,
+        "TargetType": "Self",
+        "Hit": "Single",
+        "HitCount": 1
+      },
+      "source": {
+        "path": "db/re/skill_db.yml",
+        "line": 5144,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/skill_db.yml#L5144"
+      }
+    },
+    {
+      "id": 143,
+      "raw_fields": {
+        "Name": "NV_TRICKDEAD",
+        "Description": "Play Dead",
+        "MaxLevel": 1,
+        "TargetType": "Self",
+        "Hit": "Single",
+        "HitCount": 1,
+        "Duration1": 600000,
+        "Status": "TrickDead"
+      },
+      "source": {
+        "path": "db/re/skill_db.yml",
+        "line": 5157,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/skill_db.yml#L5157"
+      }
+    }
+  ],
+  "checked_skill_effects": {
+    "first_aid": {
+      "skill_id": 142,
+      "sp_cost": 3,
+      "hp_heal_in_implementation": 5
+    },
+    "play_dead": {
+      "skill_id": 143,
+      "sp_cost": 5,
+      "database_duration_ms": 600000,
+      "toggleable": true,
+      "notes": [
+        "Actual end conditions and blocked actions come from status data and code.",
+        "Natural HP/SP regeneration is disabled while Trickdead is active."
+      ]
+    }
+  },
+  "quests": [
+    {
+      "id": 4269,
+      "raw_fields": {
+        "Title": "Registration at the Academy"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 1962,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L1962"
+      }
+    },
+    {
+      "id": 7472,
+      "raw_fields": {
+        "Title": "First step towards a new world"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 4392,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L4392"
+      }
+    },
+    {
+      "id": 7473,
+      "raw_fields": {
+        "Title": "Cool drink"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 4394,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L4394"
+      }
+    },
+    {
+      "id": 11339,
+      "raw_fields": {
+        "Title": "The most delicious on earth"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 7720,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L7720"
+      }
+    },
+    {
+      "id": 11340,
+      "raw_fields": {
+        "Title": "Carrots are delicious!"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 7725,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L7725"
+      }
+    },
+    {
+      "id": 11341,
+      "raw_fields": {
+        "Title": "Rolling Fabre's clothing"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 7730,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L7730"
+      }
+    },
+    {
+      "id": 11342,
+      "raw_fields": {
+        "Title": "Antidote Material~"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 7735,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L7735"
+      }
+    },
+    {
+      "id": 11344,
+      "raw_fields": {
+        "Title": "Barrier!!"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 7742,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L7742"
+      }
+    },
+    {
+      "id": 21001,
+      "raw_fields": {
+        "Title": "Escape the Wreck"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 12534,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L12534"
+      }
+    },
+    {
+      "id": 21008,
+      "raw_fields": {
+        "Title": "The first battle"
+      },
+      "source": {
+        "path": "db/re/quest_db.yml",
+        "line": 12538,
+        "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/quest_db.yml#L12538"
+      }
+    }
+  ],
+  "intro": {
+    "spawn_monster_id": 2401,
+    "spawn_display_name": "Poring",
+    "active_quest_id": 21008,
+    "quest_item_id": 6008,
+    "quest_drop_rate_out_of_10000": 10000,
+    "quest_drop_delivery": "Quest system attempts to add the item to inventory; inventory constraints still apply.",
+    "handin_wood_amount": 2,
+    "handin_getexp_arguments": {
+      "base": 100,
+      "job": 100
+    },
+    "handin_magnifiers": {
+      "item_id": 611,
+      "amount": 5
+    },
+    "skip_note": "Warp script permits leaving with a warning and completes the active introductory quest instead of requiring the hand-in."
+  },
+  "academy_hunt_examples": [
+    {
+      "quest_id": 11339,
+      "mob_id": 1002,
+      "kill_count": 10,
+      "handin_item_id": 909,
+      "handin_count": 5,
+      "base_exp_argument": 90,
+      "job_exp_argument": 50
+    },
+    {
+      "quest_id": 11340,
+      "mob_id": 1063,
+      "kill_count": 10,
+      "handin_item_id": 515,
+      "handin_count": 1,
+      "base_exp_argument": 90,
+      "job_exp_argument": 50
+    },
+    {
+      "quest_id": 11341,
+      "mob_id": 1007,
+      "kill_count": 10,
+      "handin_item_id": 914,
+      "handin_count": 3,
+      "base_exp_argument": 135,
+      "job_exp_argument": 100
+    },
+    {
+      "quest_id": 11344,
+      "mob_id": 1008,
+      "kill_count": 5,
+      "handin_item_id": 915,
+      "handin_count": 2,
+      "base_exp_argument": 120,
+      "job_exp_argument": 90
+    }
+  ],
+  "poring_1002_normal_drop_inputs": {
+    "rate_denominator": 10000,
+    "source": {
+      "path": "db/re/mob_db.yml",
+      "line": 136,
+      "url": "https://github.com/zeroice-ice/rathena/blob/8338edfa85b3794e5f024d5f3daed6064012dc0f/db/re/mob_db.yml#L136"
+    },
+    "drops": [
+      {
+        "aegis_item": "Jellopy",
+        "index": 0,
+        "rate": 7000
+      },
+      {
+        "aegis_item": "Knife_",
+        "index": 1,
+        "rate": 100
+      },
+      {
+        "aegis_item": "Sticky_Mucus",
+        "index": 2,
+        "rate": 400
+      },
+      {
+        "aegis_item": "Apple",
+        "index": 3,
+        "rate": 1000
+      },
+      {
+        "aegis_item": "Wing_Of_Fly",
+        "index": 4,
+        "rate": 500
+      },
+      {
+        "aegis_item": "Apple",
+        "index": 5,
+        "rate": 150
+      },
+      {
+        "aegis_item": "Unripe_Apple",
+        "index": 6,
+        "rate": 20
+      },
+      {
+        "aegis_item": "Poring_Card",
+        "index": 7,
+        "rate": 20,
+        "steal_protected": true
+      }
+    ],
+    "notes": [
+      "Separate normal drop entries; not a mutually exclusive weighted loot table.",
+      "Modifiers and special cases are applied by the engine."
+    ]
+  },
+  "death_notes": [
+    "Normal Novice is excluded from the EXP-penalty block in pc_dead.",
+    "The eligible Novice respawn HP branch uses half MaxHP if restart_hp_rate is below 50.",
+    "SP is not unconditionally reset to 1; pc_setrestartvalue may preserve a higher amount."
+  ],
+  "unimplemented": [
+    "No gameplay engine, scheduler, RNG execution, character creation, or saved campaign has been implemented by this research export."
+  ]
+}
