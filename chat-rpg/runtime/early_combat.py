@@ -97,6 +97,51 @@ class Scheduler:
         return [dict(at=e.at,sequence=e.sequence,kind=e.kind,data=e.data) for e in sorted(self.events)]
 
 
+def resolve_single_player_attack(now, seed, counter, player_hp=45, mob_hp=55):
+    """Resolve one requested normal attack and the first AI retaliation it causes.
+
+    Scope is deliberately narrow: adjacent targets, no movement or skills, current
+    Novice buffs, and one G_PORING.  The 100 ms AI polling is source-derived; using
+    its next boundary and storing an insertion order is the chat adapter.
+    """
+    player, mob = novice2_blessed(), poring()
+    rng = RNG(seed, counter)
+    sched, log = Scheduler(now), []
+    # unit_attack attacks immediately; battle damage is delivered after amotion.
+    sched.add(now + player['amotion'], 'player_damage')
+    state = {'player_hp': player_hp, 'mob_hp': mob_hp, 'retaliation_started': False}
+
+    def player_damage(event, queue):
+        result = attack(player, mob, rng, True)
+        state['mob_hp'] = max(0, state['mob_hp'] - result['damage'])
+        log.append(dict(at=event.at, actor='player', **result, target_hp=state['mob_hp']))
+        if state['mob_hp']:
+            # mob_ai_hard runs every 100 ms.  A damaged type-02 Poring can target
+            # and attack its attacker because it has MD_CANATTACK (0x83).
+            ai_at = ((event.at + 99) // 100) * 100
+            queue.add(ai_at, 'mob_ai')
+
+    def mob_ai(event, queue):
+        state['retaliation_started'] = True
+        queue.add(event.at + mob['amotion'], 'mob_damage')
+        # unit_attack(md, target, 1) makes the monster's normal attack continuous.
+        # We stop this command after its first impact and persist the next attack.
+        state['next_mob_attack_start_ms'] = event.at + mob['adelay']
+
+    def mob_damage(event, queue):
+        result = attack(mob, player, rng, False)
+        state['player_hp'] = max(0, state['player_hp'] - result['damage'])
+        log.append(dict(at=event.at, actor='poring', **result, target_hp=state['player_hp']))
+
+    end = ((now + player['amotion'] + 99) // 100) * 100 + mob['amotion']
+    sched.advance(end, {'player_damage': player_damage, 'mob_ai': mob_ai,
+                        'mob_damage': mob_damage})
+    return dict(end_ms=end, player_hp=state['player_hp'], mob_hp=state['mob_hp'],
+                rng_counter=rng.counter, rng_audit=rng.audit, events=log,
+                retaliation_started=state['retaliation_started'],
+                next_mob_attack_start_ms=state.get('next_mob_attack_start_ms'))
+
+
 def verify():
     p,m=novice2_blessed(),poring()
     assert (p['batk'],p['soft_def'],p['amotion'],p['adelay'],p['walk_ms'])==(14,3,520,1040,112)
@@ -118,5 +163,8 @@ def verify():
     except Unsupported:pass
     else:raise AssertionError('unknown event did not stop')
     assert s.now==1040
+    r = resolve_single_player_attack(8594, 'verification', 1)
+    assert [e['at'] for e in r['events']] == [9114, 9872]
+    assert r['retaliation_started'] and r['rng_counter'] > 1
     print('Verified: damage boundary fixtures, RNG replay, event ordering, unsupported-event guard.')
 if __name__=='__main__': verify()
