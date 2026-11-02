@@ -11,3 +11,12 @@ runtime/early_combat.py เป็น calculation kernel และ queue primitiv
 การทดสอบ: python chat-rpg/runtime/early_combat.py ตรวจ normal/critical/PD/miss fixture, ขอบเขต hit42%, seed replay, queueเรียง1040ก่อน1872 และไม่เดินเวลาถ้าขาด handler. ยังไม่ทดสอบ fight end-to-end.
 
 ส่วนดัดแปลงโลกแชท: encounter node `island_training_01` เป็นพื้นที่ย่อสำหรับเผชิญหน้า ไม่ใช่พิกัด spawnจริง. ระยะทางจากกัปตันกำหนด12ก้าวตรงเทียบเท่า ใช้เวลา1344msขณะมีบัฟ; ไม่อ้างว่าตรวจ collision หรือจำลอง40มอนสเตอร์เดินจริง. มอนสเตอร์เป้าหมาย `intro_poring_01`, ID2401 HP55 ใช้สมาชิกใน spawn budget40ของ int_land02 ตาม npc/re/mobs/int_land.txt; ไม่ได้เพิ่มโอกาสดรอป. รอคำสั่งโจมตีจากผู้เล่น ไม่เริ่มต่อสู้อัตโนมัติ. ไม่สุ่มหาตำแหน่งที่ source ไม่ระบุ. ระหว่างอยู่ node ใช้ชื่อ node แทนพิกัดที่ยังไม่ตรวจ; เก็บตำแหน่ง anchor ไว้สำหรับกลับไปกัปตัน.
+
+
+## การโจมตีจริงครั้งที่ 1 — มิสเตอร์ไอซ์
+
+ต่อยอด kernel ด้วย `resolve_single_player_attack` สำหรับคำสั่งโจมตีปกติหนึ่งครั้งในเงื่อนไขนี้เท่านั้น: เป้าหมายประชิด, Human Novice ปัจจุบันที่ได้รับ Blessing/Increase AGI, Knife และ G_PORING ID 2401. ลำดับที่ใช้: unit_attack เริ่มโจมตีทันที → `battle_delay_damage_sub` ส่ง damage หลัง player amotion 520ms → `mob_ai_hard` รอบถัดไปทุก 100ms เห็นผู้โจมตีและเริ่มโจมตีตอบโต้ → ส่ง damage หลัง Poring amotion 672ms. `mob.cpp` ทำให้ Poring Type 02 (`0x83`, มี MD_CANATTACK) เปลี่ยนเป้าหมายไปยังผู้โจมตีแม้ไม่มี MD_AGGRESSIVE.
+
+ผลคำสั่งที่เวลา 8594ms ใช้ seed/counter จากเซฟ: ผู้เล่นโจมตีโดน 39 ที่ 9114ms (Poring เหลือ 16/55); AI เริ่มที่ 9200ms; Poring ตีโดน 3 ที่ 9872ms (ผู้เล่นเหลือ 42/45). การโจมตีของ Poring เป็น continuous ผ่าน `unit_attack(md, target, 1)` จึงบันทึกจุดเริ่มตีถัดไป 11072ms และกำหนดผลกระทบที่ 11744ms เป็น pending event; นาฬิกาแชทหยุดที่ 9872ms เพื่อรอคำสั่งผู้เล่น จึงยังไม่ทอยครั้งถัดไป.
+
+การตรวจ: `python chat-rpg/runtime/early_combat.py` ผ่าน fixtures ของ damage, RNG replay, queue order/unknown-event guard และลำดับเวลาจริงข้างต้น. ขอบเขตที่ยังไม่มี: combat หลายคำสั่งต่อเนื่อง, ตาย, EXP/quest objective/wood, item pickup/use, regeneration, เคลื่อนที่/หนีระหว่างสู้ และบัฟหมดอายุระหว่าง combat. ห้ามใช้ผลของส่วนเหล่านี้ก่อนตรวจและเชื่อมเพิ่ม.
